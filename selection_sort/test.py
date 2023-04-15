@@ -1,4 +1,4 @@
-from selection_sort import main
+from selection_sort.main import selection_sort
 
 def test():
-    assert main.selection_sort([3, 4, 5, 2, 1]) == [1, 2, 3, 4, 5]
+    assert selection_sort([3, 4, 5, 2, 1]) == [1, 2, 3, 4, 5]
