@@ -38,4 +38,4 @@ jobs:
           # default set of ruff rules with GitHub Annotations
           ruff --format=github --target-version=py37 .
       - name: Test with pytest
-        run: pytest
+        run: pytest **/test.py
