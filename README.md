@@ -5,5 +5,6 @@
 ## Algorithms
 
 - [A binary search](binary_search/main.py)
+- [A selection sort](selection_sort/main.py)
 
 Happy Hacking!
