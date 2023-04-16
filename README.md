@@ -9,5 +9,6 @@
 - [A factorial number](factorial/main.py)
 - [A greatest common divisor](gcd/main.py)
 - [A recursive sum](sum/main.py)
+- [A quick sort](quick_sort/main.py)
 
 Happy Hacking!
