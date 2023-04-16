@@ -1,13 +1,12 @@
 from gcd import main
 
 def gcd(x, y):
-    if x < y:
-        x, y = y, x
-    x %= y
     if x == 0:
         return y
-    else:
-        return gcd(x, y)
+    elif x < y:
+        x, y = y, x
+    x %= y
+    return gcd(x, y)
 
 def test():
     for x in range(1, 1000):
