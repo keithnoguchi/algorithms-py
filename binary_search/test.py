@@ -25,7 +25,7 @@ def test():
     assert main.binary_search(my_list, 999) == 999
     assert main.binary_search(my_list, 1000) is None
 
-    random.shuffle(my_list);
+    random.shuffle(my_list)
     assert main.binary_search(my_list, 5) == binary_search(my_list, 5)
     assert main.binary_search(my_list, 1) == binary_search(my_list, 1)
     assert main.binary_search(my_list, 998) == binary_search(my_list, 998)
