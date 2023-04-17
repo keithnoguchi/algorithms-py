@@ -6,6 +6,7 @@
 
 - [A binary search](binary_search/main.py)
 - [A selection sort](selection_sort/main.py)
+- [A fibonacci number](fibonacci/main.py)
 - [A factorial number](factorial/main.py)
 - [A greatest common divisor](gcd/main.py)
 - [A recursive sum](sum/main.py)
