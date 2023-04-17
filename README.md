@@ -11,4 +11,8 @@
 - [A recursive sum](sum/main.py)
 - [A quick sort](quick_sort/main.py)
 
+## Data Structures
+
+- [A hash table](hash_table/main.py)
+
 Happy Hacking!
