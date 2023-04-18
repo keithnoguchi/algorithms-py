@@ -22,7 +22,7 @@ class Graph:
                 return b
             elif item in visited:
                 continue
-            elif item in self.adjacencies:
+            else:
                 visited.add(item)
                 queue += self.neighbors(item)
 
@@ -33,6 +33,7 @@ if __name__ == "__main__":
     graph.add_edge('you', 'alice')
     graph.add_edge('you', 'bob')
     graph.add_edge('you', 'nancy')
+    graph.add_edge('jessica', 'david')
     graph.add_edge('nancy', 'jessica')
     graph.add_edge('bob', 'jessica')
     print(graph.bfs('you', 'jessica'))
