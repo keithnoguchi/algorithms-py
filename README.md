@@ -11,6 +11,7 @@
 - [A greatest common divisor](gcd/main.py)
 - [A recursive sum](sum/main.py)
 - [A quick sort](quick_sort/main.py)
+- [A breath first search](bfs/main.py)
 
 ## Data Structures
 
