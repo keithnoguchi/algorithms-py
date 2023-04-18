@@ -1,3 +1,5 @@
+from collections import deque
+
 class Graph:
     def __init__(self):
         self.adjacencies = {}
@@ -11,10 +13,27 @@ class Graph:
     def neighbors(self, a):
         return self.adjacencies[a]
 
+    def bfs(self, a, b):
+        queue = deque(self.neighbors(a))
+        visited = set()
+        while queue:
+            item = queue.pop()
+            if item == b:
+                return b
+            elif item in visited:
+                continue
+            elif item in self.adjacencies:
+                visited.add(item)
+                queue += self.neighbors(item)
+
+        return None
+
 if __name__ == "__main__":
     graph = Graph()
     graph.add_edge('you', 'alice')
     graph.add_edge('you', 'bob')
     graph.add_edge('you', 'nancy')
     graph.add_edge('nancy', 'jessica')
-    print(graph.neighbors('you'))
+    graph.add_edge('bob', 'jessica')
+    print(graph.bfs('you', 'jessica'))
+    print(graph.bfs('you', 'david'))
