@@ -45,3 +45,4 @@ if __name__ == "__main__":
     graph.add_edge('bob', 'jessica')
     print(graph.bfs('you', 'jessica'))
     print(graph.bfs('you', 'david'))
+    print(graph.bfs('bob', 'david'))
