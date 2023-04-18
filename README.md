@@ -15,5 +15,6 @@
 ## Data Structures
 
 - [A hash table](hash_table/main.py)
+- [A graph](graph/main.py)
 
 Happy Hacking!
