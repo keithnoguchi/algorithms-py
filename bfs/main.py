@@ -11,9 +11,14 @@ class Graph:
             self.adjacencies[a] = [b]
 
     def neighbors(self, a):
-        return self.adjacencies[a]
+        if a in self.adjacencies:
+            return self.adjacencies[a]
+        else:
+            None
 
     def bfs(self, a, b):
+        if a not in self.adjacencies:
+            return None
         queue = deque(self.neighbors(a))
         visited = set()
         while queue:
@@ -24,7 +29,9 @@ class Graph:
                 continue
             else:
                 visited.add(item)
-                queue += self.neighbors(item)
+                neighbors = self.neighbors(item)
+                if neighbors is not None:
+                    queue += self.neighbors(item)
 
         return None
 
