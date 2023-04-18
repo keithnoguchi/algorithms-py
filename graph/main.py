@@ -1,15 +1,15 @@
 class Graph:
     def __init__(self):
-        self.graph = {}
+        self.adjacencies = {}
 
     def add_edge(self, a, b):
-        if a in self.graph:
-            self.graph[a].append(b)
+        if a in self.adjacencies:
+            self.adjacencies[a].append(b)
         else:
-            self.graph[a] = [b]
+            self.adjacencies[a] = [b]
 
     def neighbors(self, a):
-        return self.graph[a]
+        return self.adjacencies[a]
 
 if __name__ == "__main__":
     graph = Graph()
